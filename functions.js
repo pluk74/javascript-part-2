@@ -74,8 +74,24 @@ people = people.sort(compareObjectEmail);
 //console.log(people);
 
 /*
+Exercise 3: 
 Create a function that can be used with Array.prototype.map. 
 
 This function should take a number and return its square. 
 Then, use this function with map on an array of numbers to check the result.
+*/
+
+
+function squared (x) {
+    
+    return x*x;
+}
+
+var arr = [3,4,6,7];
+var arrsq = arr.map(squared);
+//console.log(arrsq);
+
+
+/*
+Create a function that can be used with Array.prototype.map. This function should be able to take an object and square its “num” property. Then, use this function with map on an array of objects each containing a “num” property.
 */
