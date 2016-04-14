@@ -93,5 +93,32 @@ var arrsq = arr.map(squared);
 
 
 /*
-Create a function that can be used with Array.prototype.map. This function should be able to take an object and square its “num” property. Then, use this function with map on an array of objects each containing a “num” property.
+Exercise 4: 
+Create a function that can be used with Array.prototype.map. 
+
+This function should be able to take an object and square its “num” property. 
+
+Then, use this function with map on an array of objects each containing a “num” property.
 */
+
+var arrObj = [
+    {num: 3},
+    {num: 5},
+    {num: 1},
+    {num: 9}
+    ]
+    
+function squaredNumInObj (x) {
+    
+    return x.num*x.num;
+}
+    
+function squareArrProp (arr) {
+    
+    var arrObj2 = arr.map(squaredNumInObj);
+
+    return arrObj2;
+    
+}
+
+console.log(squareArrProp(arrObj));
