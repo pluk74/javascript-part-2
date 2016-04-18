@@ -43,6 +43,7 @@ function EmailType (type)
     }
 }
 
+
 /*
 
 Add an addEmail function to the prototype of Person. This function will be available to all objects created using new Person. The addEmail function should take an email address and type as arguments, call the Email constructor to create a new email object, then push that email object to the emails of the person.
